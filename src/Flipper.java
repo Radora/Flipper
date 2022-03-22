@@ -15,11 +15,14 @@ public class Flipper {
         return status;
     }
 
+
+    // Return int as confirmation?
     public void setStatus(FlipperStatus state) {
         this.status = state;
     }
 
-    public void coinInserted(){
+    // Return int as confirmation?
+    public void coinInserted() {
         this.credits++;
     }
 
