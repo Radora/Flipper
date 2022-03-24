@@ -15,5 +15,7 @@ public class Main {
         // COMMAND
         //flipper_elements.FlipperItem flipperItem = new flipper_elements.Rampe.ge
 
+        System.out.println("Hello");
+
     }
 }
