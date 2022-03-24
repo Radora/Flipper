@@ -1,6 +1,8 @@
-package factory;
+package factory.ConsolePrints;
 
-public class DisplayGameOver implements FlipperDisplayFactory {
+import factory.PrintConsole;
+
+public class GameOverDoll extends PrintConsole {
 
     String output = "\n" +
             " $$$$$$\\   $$$$$$\\  $$\\      $$\\ $$$$$$$$\\        $$$$$$\\  $$\\    $$\\ $$$$$$$$\\ $$$$$$$\\        $$\\ \n" +
@@ -12,14 +14,12 @@ public class DisplayGameOver implements FlipperDisplayFactory {
             "\\$$$$$$  |$$ |  $$ |$$ | \\_/ $$ |$$$$$$$$\\        $$$$$$  |   \\$  /   $$$$$$$$\\ $$ |  $$ |      $$\\ \n" +
             " \\______/ \\__|  \\__|\\__|     \\__|\\________|       \\______/     \\_/    \\________|\\__|  \\__|      \\__|\n";
 
-    public DisplayGameOver(){};
-
-    public DisplayGameOver(String newOutput){
-        this.output = newOutput;
+    public GameOverDoll() {
     }
 
-    @Override
-    public void display() {
-        System.out.println(output);
+
+    public String toString(){
+        return output;
     }
+
 }

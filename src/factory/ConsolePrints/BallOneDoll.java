@@ -1,10 +1,9 @@
-package factory;
+package factory.ConsolePrints;
 
-import java.net.DatagramSocketImpl;
+import factory.PrintConsole;
 
-public class DisplayStart implements FlipperDisplayFactory{
+public class BallOneDoll extends PrintConsole {
 
-    // ToDo: Replace string
     String output = "\n" +
             "$$$$$$$\\   $$$$$$\\  $$\\       $$\\               $$\\   \n" +
             "$$  __$$\\ $$  __$$\\ $$ |      $$ |            $$$$ |  \n" +
@@ -15,15 +14,12 @@ public class DisplayStart implements FlipperDisplayFactory{
             "$$$$$$$  |$$ |  $$ |$$$$$$$$\\ $$$$$$$$\\       $$$$$$\\ \n" +
             "\\_______/ \\__|  \\__|\\________|\\________|      \\______|\n";
 
-
-    public DisplayStart(){};
-
-    public DisplayStart(String newOutput){
-        this.output = newOutput;
+    public BallOneDoll() {
     }
 
-    @Override
-    public void display() {
-        System.out.printf(output);
+    public String toString(){
+        return output;
     }
+
+
 }

@@ -1,6 +1,8 @@
-package factory;
+package factory.ConsolePrints;
 
-public class DisplayBallThree implements FlipperDisplayFactory{
+import factory.PrintConsole;
+
+public class BallThreeDoll extends PrintConsole {
 
     String output = "\n" +
             "$$$$$$$\\   $$$$$$\\  $$\\       $$\\              $$$$$$\\  \n" +
@@ -12,15 +14,10 @@ public class DisplayBallThree implements FlipperDisplayFactory{
             "$$$$$$$  |$$ |  $$ |$$$$$$$$\\ $$$$$$$$\\       \\$$$$$$  |\n" +
             "\\_______/ \\__|  \\__|\\________|\\________|       \\______/ \n";
 
-    public DisplayBallThree(){}
+    public BallThreeDoll(){}
 
-    public DisplayBallThree(String newOutput){
-        this.output = newOutput;
-    }
-
-    @Override
-    public void display() {
-        System.out.println(output);
+    public String toString(){
+        return output;
     }
 
 
