@@ -1,3 +1,7 @@
+package command;
+
+import flipper_elements.FlipperItem;
+
 public class GivePointsCommand implements Command {
 
     FlipperItem itemToHit;

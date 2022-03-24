@@ -1,8 +1,13 @@
-public class Bumper implements Visitable{
+package flipper_elements;
+
+import visitor.Visitor;
+import visitor.Visitable;
+
+public class Target implements Visitable {
 
     private int pointsOnHit;
 
-    Bumper(int points){
+    public Target(int points){
         pointsOnHit = points;
     }
 

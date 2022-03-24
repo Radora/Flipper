@@ -1,4 +1,9 @@
-public class SlingShot implements Visitable{
+package flipper_elements;
+
+import visitor.Visitor;
+import visitor.Visitable;
+
+public class SlingShot implements Visitable {
 
     private int pointsOnHit;
 

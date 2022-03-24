@@ -1,3 +1,5 @@
+package flipper;
+
 public class GameScore {
 
     int currentGameScore;

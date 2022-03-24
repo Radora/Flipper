@@ -1,8 +1,13 @@
-public class Target implements Visitable{
+package flipper_elements;
+
+import visitor.Visitor;
+import visitor.Visitable;
+
+public class Hole implements Visitable {
 
     private int pointsOnHit;
 
-    public Target(int points){
+    Hole(int points){
         pointsOnHit = points;
     }
 

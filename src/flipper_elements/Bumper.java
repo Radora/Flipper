@@ -1,8 +1,15 @@
-public class Rampe implements Visitable,FlipperItem{
+package flipper_elements;
+
+import mediator.Mediator;
+import visitor.Visitor;
+import visitor.Visitable;
+
+public class Bumper implements Visitable {
 
     private int pointsOnHit;
+    Mediator mediator;
 
-    public Rampe(int points){
+    Bumper(int points){
         pointsOnHit = points;
     }
 
@@ -12,11 +19,6 @@ public class Rampe implements Visitable,FlipperItem{
     }
 
     public int getItemPoints(){
-        return pointsOnHit;
-    }
-
-    @Override
-    public int hit() {
         return pointsOnHit;
     }
 }

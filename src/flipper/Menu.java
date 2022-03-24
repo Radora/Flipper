@@ -1,3 +1,5 @@
+package flipper;
+
 public class Menu {
 
     public void printWelcome() {

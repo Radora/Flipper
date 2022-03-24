@@ -1,6 +1,10 @@
+package visitor;
+
+import visitor.Visitor;
+
 public interface Visitable {
 
-    // Allows the Visitor to pass the object so
+    // Allows the visitor.Visitor to pass the object so
     // the right operations occur on the right
     // type of object.
 

@@ -1,4 +1,9 @@
-public class Kicker implements Visitable{
+package flipper_elements;
+
+import visitor.Visitor;
+import visitor.Visitable;
+
+public class Kicker implements Visitable {
 
     private int pointsOnHit;
 

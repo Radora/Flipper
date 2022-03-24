@@ -1,4 +1,8 @@
-public class ReadyState extends State {
+package states;
+
+import states.State;
+
+public class ReadyState implements State {
 
     String state = "READY";
 

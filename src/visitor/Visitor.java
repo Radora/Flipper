@@ -1,3 +1,7 @@
+package visitor;
+
+import flipper_elements.*;
+
 public interface Visitor {
 
     public int visit(Rampe rampe);
