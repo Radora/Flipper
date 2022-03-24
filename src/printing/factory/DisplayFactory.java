@@ -1,4 +1,4 @@
-package factory;
+package printing.factory;
 
 
 public abstract class DisplayFactory {

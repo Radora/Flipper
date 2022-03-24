@@ -1,4 +1,4 @@
-package factory;
+package printing.factory;
 
 public class PrintConsole {
 

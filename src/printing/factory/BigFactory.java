@@ -1,6 +1,7 @@
-package factory;
+package printing.factory;
 
 import factory.ConsolePrints.*;
+import printing.factory.ConsolePrints.*;
 
 public class BigFactory extends DisplayFactory {
 

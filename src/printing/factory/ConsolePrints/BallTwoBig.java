@@ -1,6 +1,6 @@
-package factory.ConsolePrints;
+package printing.factory.ConsolePrints;
 
-import factory.PrintConsole;
+import printing.factory.PrintConsole;
 
 public class BallTwoBig extends PrintConsole {
 

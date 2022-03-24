@@ -1,9 +1,9 @@
-package factory;
+package printing.factory;
 
-import factory.ConsolePrints.BallThreeDoll;
-import factory.ConsolePrints.BallTwoDoll;
-import factory.ConsolePrints.GameOverDoll;
-import factory.ConsolePrints.WelcomeDoll;
+import printing.factory.ConsolePrints.BallThreeDoll;
+import printing.factory.ConsolePrints.BallTwoDoll;
+import printing.factory.ConsolePrints.GameOverDoll;
+import printing.factory.ConsolePrints.WelcomeDoll;
 
 public class DollFactory extends DisplayFactory {
 

@@ -1,8 +1,8 @@
-package factory.ConsolePrints;
+package printing.factory.ConsolePrints;
 
-import factory.PrintConsole;
+import printing.factory.PrintConsole;
 
-public class BallThreeBig extends PrintConsole {
+public class WelcomeDoll extends PrintConsole {
 
     String output = "\n" +
             "$$\\      $$\\ $$$$$$$$\\ $$\\       $$$$$$\\   $$$$$$\\  $$\\      $$\\ $$$$$$$$\\ $$\\ \n" +
@@ -14,10 +14,11 @@ public class BallThreeBig extends PrintConsole {
             "$$  /   \\$$ |$$$$$$$$\\ $$$$$$$$\\\\$$$$$$  | $$$$$$  |$$ | \\_/ $$ |$$$$$$$$\\ $$\\ \n" +
             "\\__/     \\__|\\________|\\________|\\______/  \\______/ \\__|     \\__|\\________|\\__|\n";
 
-    public BallThreeBig() {
+    public WelcomeDoll() {
     }
 
-    public String toString(){
+    public String toString() {
         return output;
     }
+
 }
