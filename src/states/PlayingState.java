@@ -1,6 +1,6 @@
 package states;
 
-public class PlayingState {
+public class PlayingState implements State{
 
     String state = "PLAYING";
 

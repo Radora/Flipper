@@ -1,24 +1,41 @@
 package flipper_elements;
 
+import mediator.ConcreteMediator;
 import mediator.Mediator;
-import visitor.Visitor;
+import visitor.ElementsVisitor;
 import visitor.Visitable;
 
-public class Bumper implements Visitable {
+public class Bumper implements Visitable, FlipperItem {
 
     private int pointsOnHit;
+    private String name;
     Mediator mediator;
 
-    Bumper(int points){
+    Bumper(String elemName, int points) {
         pointsOnHit = points;
+        name = elemName;
+        mediator = new ConcreteMediator();
+
     }
 
     @Override
-    public double accept(Visitor visitor) {
+    public double accept(ElementsVisitor visitor) {
         return visitor.visit(this);
     }
 
-    public int getItemPoints(){
+    @Override
+    public int hit() {
+        mediator.notify(this);
         return pointsOnHit;
     }
+
+    public int getItemPoints() {
+        return pointsOnHit;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
 }

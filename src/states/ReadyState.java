@@ -1,7 +1,5 @@
 package states;
 
-import states.State;
-
 public class ReadyState implements State {
 
     String state = "READY";

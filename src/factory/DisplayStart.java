@@ -23,7 +23,7 @@ public class DisplayStart implements FlipperDisplayFactory{
     }
 
     @Override
-    public void displayOutput() {
+    public void display() {
         System.out.printf(output);
     }
 }

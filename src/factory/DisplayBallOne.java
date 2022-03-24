@@ -1,6 +1,6 @@
 package factory;
 
-public class DisplayBallOne implements FlipperDisplayFactory{
+public class DisplayBallOne implements FlipperDisplayFactory {
 
     String output = "\n" +
             "$$$$$$$\\   $$$$$$\\  $$\\       $$\\               $$\\   \n" +
@@ -12,14 +12,15 @@ public class DisplayBallOne implements FlipperDisplayFactory{
             "$$$$$$$  |$$ |  $$ |$$$$$$$$\\ $$$$$$$$\\       $$$$$$\\ \n" +
             "\\_______/ \\__|  \\__|\\________|\\________|      \\______|\n";
 
-    public DisplayBallOne(){}
+    public DisplayBallOne() {
+    }
 
-    public DisplayBallOne(String newOutput){
+    public DisplayBallOne(String newOutput) {
         this.output = newOutput;
     }
 
     @Override
-    public void displayOutput() {
+    public void display() {
         System.out.println(output);
     }
 

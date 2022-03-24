@@ -1,6 +1,6 @@
 package flipper_elements;
 
-import visitor.Visitor;
+import visitor.ElementsVisitor;
 import visitor.Visitable;
 
 public class Kicker implements Visitable {
@@ -12,7 +12,7 @@ public class Kicker implements Visitable {
     }
 
     @Override
-    public double accept(Visitor visitor) {
+    public double accept(ElementsVisitor visitor) {
         return visitor.visit(this);
     }
 

@@ -2,7 +2,6 @@ package command;
 
 import flipper.Flipper;
 import states.State;
-import visitor.Visitor;
 
 
 public class ChangeFlipperStateCommand implements Command {

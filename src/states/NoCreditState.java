@@ -1,6 +1,6 @@
 package states;
 
-public class NoCreditState {
+public class NoCreditState implements State{
 
     String state = "NO_CREDIT";
 

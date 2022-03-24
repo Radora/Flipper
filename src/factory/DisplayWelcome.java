@@ -19,7 +19,7 @@ public class DisplayWelcome implements FlipperDisplayFactory{
     }
 
     @Override
-    public void displayOutput() {
+    public void display() {
         System.out.println(output);
     }
 }

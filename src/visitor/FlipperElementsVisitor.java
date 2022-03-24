@@ -2,9 +2,12 @@ package visitor;
 
 import flipper_elements.*;
 
-public class FlipperComponentsVisitor implements Visitor {
+import java.util.ArrayList;
 
-    public FlipperComponentsVisitor(){}
+public class FlipperElementsVisitor implements ElementsVisitor {
+
+    public FlipperElementsVisitor() {
+    }
 
     @Override
     public int visit(Rampe rampe) {
@@ -29,6 +32,11 @@ public class FlipperComponentsVisitor implements Visitor {
     @Override
     public int visit(Kicker kicker) {
         return kicker.getItemPoints();
+    }
+
+    @Override
+    public void visit(ArrayList<FlipperItem> flipperItemsToVisit) {
+        flipperItemsToVisit.forEach((elem) -> System.out.println("Points earned for hitting" + elem.toString()));
     }
 
     @Override

@@ -1,7 +1,5 @@
 package visitor;
 
-import visitor.Visitor;
-
 public interface Visitable {
 
     // Allows the visitor.Visitor to pass the object so
@@ -13,6 +11,6 @@ public interface Visitable {
     // the visitor object. The right version of visit()
     // is called because of the method overloading
 
-    public double accept(Visitor visitor);
+    public double accept(ElementsVisitor visitor);
 
 }
