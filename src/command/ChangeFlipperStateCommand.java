@@ -1,6 +1,5 @@
 package command;
 
-import flipper.Flipper;
 import states.State;
 
 
@@ -9,10 +8,9 @@ public class ChangeFlipperStateCommand implements Command {
     flipper.Flipper flipperToAdjust;
     State newFlipperState;
 
-    public ChangeFlipperStateCommand(Flipper flipper, State state){
-        flipperToAdjust = flipper;
-        newFlipperState = state;
+    public ChangeFlipperStateCommand() {
     }
+
 
     @Override
     public void execute() {

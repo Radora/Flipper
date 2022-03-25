@@ -6,6 +6,9 @@ public class GivePointsCommand implements Command {
 
     FlipperItem itemToHit;
 
+    public GivePointsCommand() {
+    }
+
     public GivePointsCommand(FlipperItem item) {
         itemToHit = item;
     }

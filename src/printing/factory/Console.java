@@ -6,16 +6,14 @@ public class Console {
 
     public Console(Console.GreetingType greetingType) {
 
-//        switch (greetingType) {
-//            case 1:
-//                this.displayFactory = new BigFactory();
-//                break;
-//            case 2:
-//                this.displayFactory = new DollFactory();
-//                break;
-//            default:
-//                throw new IllegalStateException("No such type: " + greetingType);
-//        }
+        if (greetingType.equals(GreetingType.BIG)) {
+            this.displayFactory = new BigFactory();
+
+        } else if (greetingType.equals(GreetingType.DOLL)) {
+            this.displayFactory = new DollFactory();
+        } else {
+            throw new IllegalStateException("No such type: " + greetingType);
+        }
 
     }
 
@@ -31,16 +29,8 @@ public class Console {
         System.out.println("> " + s);
     }
 
-    public static void main(String[] args) {
-        Console c = new Console(GreetingType.BIG);
-        c.start();
-        c.print("blah");
-        c.print("blah blah");
-        c.print("blah blah blah");
-        c.stop();
-    }
 
-    static enum GreetingType {
+    public static enum GreetingType {
         DOLL,
         BIG;
 
