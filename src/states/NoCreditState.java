@@ -13,7 +13,7 @@ public class NoCreditState implements State {
     @Override
     public void coinInserted(Flipper flipper) {
         flipper.addCoin();
-        flipper.setFlipperState(flipper.getReadyState());
+        flipper.setFlipperState(new ReadyState(this.flipper));
     }
 
     @Override

@@ -14,7 +14,7 @@ public class Main {
         Rampe rampeB = new Rampe("RampeRechts", 15);
         Bumper bumperA = new Bumper("BumberA", 50);
 
-        Console console = new Console(Console.GreetingType.BIG);
+        Console console = new Console(Console.GreetingType.DOLL);
         console.start();
         console.print("testing stuff");
         console.stop();

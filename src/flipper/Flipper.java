@@ -12,10 +12,6 @@ public class Flipper {
     private static Flipper instance = null;
 
     ArrayList<FlipperItem> flipperElements;
-    State noCreditState;
-    State readyState;
-    State playingState;
-
     State flipperState;
 
     GivePointsCommand givePointsCommand;
@@ -27,12 +23,9 @@ public class Flipper {
         flipperElements = new ArrayList<FlipperItem>();
         givePointsCommand = new GivePointsCommand();
 
-        noCreditState = new NoCreditState(this);
-        readyState = new ReadyState(this);
-        playingState = new PlayingState(this);
         coins = 0;
 
-        flipperState = noCreditState;
+        flipperState = new NoCreditState(this);
 
     }
 
@@ -52,31 +45,6 @@ public class Flipper {
     public void addCoin() {
         coins++;
     }
-    public State getNoCreditState() {
-        return noCreditState;
-    }
-
-
-    public void setNoCreditState(State noCreditState) {
-        this.noCreditState = noCreditState;
-    }
-
-    public State getReadyState() {
-        return readyState;
-    }
-
-    public void setReadyState(State readyState) {
-        this.readyState = readyState;
-    }
-
-    public State getPlayingState() {
-        return playingState;
-    }
-
-    public void setPlayingState(State playingState) {
-        this.playingState = playingState;
-    }
-
 
     public void createFlipperElements(ArrayList<FlipperItem> elements) {
         this.flipperElements = elements;

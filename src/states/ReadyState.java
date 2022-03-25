@@ -22,6 +22,6 @@ public class ReadyState implements State {
     @Override
     public void startPressed(Flipper flipper) {
         System.out.println("Game is starting...");
-        flipper.setFlipperState(flipper.getPlayingState());
+        flipper.setFlipperState(new PlayingState(this.flipper));
     }
 }
