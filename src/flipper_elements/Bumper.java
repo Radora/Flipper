@@ -11,7 +11,7 @@ public class Bumper implements Visitable, FlipperItem {
     private String name;
     Mediator mediator;
 
-    Bumper(String elemName, int points) {
+    public Bumper(String elemName, int points) {
         pointsOnHit = points;
         name = elemName;
         mediator = new ConcreteMediator();

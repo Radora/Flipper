@@ -1,10 +1,27 @@
 package states;
 
-public class NoCreditState implements State{
+import flipper.Flipper;
 
-    String state = "NO_CREDIT";
+public class NoCreditState implements State {
 
-    public String getState(){
-        return state;
+    Flipper flipper;
+
+    public NoCreditState(Flipper newFlipper) {
+        flipper = newFlipper;
+    }
+
+    @Override
+    public void coinInserted(Flipper flipper) {
+        flipper.addCoin();
+        flipper.setFlipperState(flipper.getReadyState());
+    }
+
+    @Override
+    public void startPressed(Flipper flipper) {
+        System.out.println("Insert credits first!");
+    }
+
+    public String toString() {
+        return "NO_CREDIT_STATE";
     }
 }

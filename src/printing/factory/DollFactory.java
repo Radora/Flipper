@@ -1,9 +1,6 @@
 package printing.factory;
 
-import printing.factory.ConsolePrints.BallThreeDoll;
-import printing.factory.ConsolePrints.BallTwoDoll;
-import printing.factory.ConsolePrints.GameOverDoll;
-import printing.factory.ConsolePrints.WelcomeDoll;
+import printing.factory.ConsolePrints.*;
 
 public class DollFactory extends DisplayFactory {
 
@@ -20,7 +17,7 @@ public class DollFactory extends DisplayFactory {
 
     @Override
     public PrintConsole printBallOne() {
-        return new BallTwoDoll();
+        return new BallOneDoll();
     }
 
     @Override

@@ -25,6 +25,10 @@ public class Console {
         System.out.println(this.displayFactory.printGameOver());
     }
 
+    public void printBallOne(){
+        System.out.println(this.displayFactory.printBallOne());
+    }
+
     public void print(String s) {
         System.out.println("> " + s);
     }

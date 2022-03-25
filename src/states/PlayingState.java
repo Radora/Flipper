@@ -1,10 +1,27 @@
 package states;
 
-public class PlayingState implements State{
 
-    String state = "PLAYING";
+import flipper.Flipper;
 
-    public String getState(){
-        return state;
+public class PlayingState implements State {
+
+    Flipper flipper;
+
+    public PlayingState(Flipper newFlipper) {
+        flipper = newFlipper;
+    }
+
+    public String toString() {
+        return "PLAYING_STATE";
+    }
+
+    @Override
+    public void coinInserted(Flipper flipper) {
+        flipper.addCoin();
+    }
+
+    @Override
+    public void startPressed(Flipper flipper) {
+        System.out.println("Authors of this flipper: ");
     }
 }
